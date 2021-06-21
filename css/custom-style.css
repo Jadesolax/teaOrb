@@ -1,0 +1,29 @@
+.rd-navbar-panel h4 {
+    color: rgb(9, 255, 0);
+    font-size: ariel-black;
+
+
+}
+.col-md-8 {
+    width: 50%;
+}
+
+.col-md-4 {
+    width: 50%;
+}
+
+.col-md-8 img {
+    width: 300px;
+    height: 300px;
+}
+
+.row {
+    padding: 50px;
+}
+
+.col-md-4 article {
+    text-align: center; 
+    font-size: 20px; 
+    color: red; 
+    font-weight: 50px;
+}
