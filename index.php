@@ -16,6 +16,7 @@
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
 
     <link rel="stylesheet" href="thirdparties/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
     <link rel="stylesheet" href="thirdparties/css/fonts.css">
     <link rel="stylesheet" href="thirdparties/css/style.css">
     <link rel='stylesheet' href='css/custom-style.css'>
@@ -37,36 +38,18 @@
         <!-- RD Navbar-->
         <div class="rd-navbar-wrap" style="height: 0px;">
             <!--Actual Navigation Starts -->
-          <nav class="rd-navbar rd-navbar-original rd-navbar-fixed" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-fixed" data-lg-device-layout="rd-navbar-fixed" data-xl-layout="rd-navbar-sidebar" data-xl-device-layout="rd-navbar-sidebar" data-xxl-layout="rd-navbar-sidebar" data-xxl-device-layout="rd-navbar-sidebar" data-md-stick-up-offset="80px" data-lg-stick-up-offset="46px" data-md-stick-up="true" data-lg-stick-up="true">
-            <div class="rd-navbar-main-outer">
-              <div class="rd-navbar-main">
-                <!-- RD Navbar Panel-->
-                <div class="rd-navbar-panel">
-                  <!-- RD Navbar Toggle-->
-                  <button class="rd-navbar-toggles toggle-original" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
-                  <!-- RD Navbar Brand -->
-                  <div class="rd-navbar-brand"><a class="brand" href="index.html"><img src="images/teaorb-logo-trans.png" alt="" width="166" height="57"></a></div>
-                  <span><h4><strong> TEA <br> ORB </strong> </h4> </span>
-                </div>
-
-                <div class="rd-navbar-main-element">
-                  <div class="rd-navbar-nav-wrap toggle-original-elements">
-                    <!-- RD Navbar Nav-->
-                    <ul class="rd-navbar-nav">
-                      <li class="rd-nav-item active"><a class="rd-nav-link" href="index.html">Home</a>
-                      </li>
-                      <li class="rd-nav-item"><a class="rd-nav-link" href="#aboutTea">About Orb</a>
-                      </li>
-                      <li class="rd-nav-item"><a class="rd-nav-link" href="#">About Tea</a>
-                      </li>
-                      <li class="rd-nav-item"><a class="rd-nav-link" href="#products1">Products</a>
-                      </li>
-                  
-                      <li class="rd-nav-item"><a class="rd-nav-link" href="#contacts">Contact Us</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
+          <nav class="navbar fixed-top navbar-expand-lg navbar-dark" style='background-color: #0B0603;'>
+            <a class="navbar-brand" href="#">TeaOrb</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" style='color: white;'>
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="#aboutOrb">About Orb</a>
+                <a class="nav-item nav-link" href="#aboutTea">About Tea</a>
+                <a class="nav-item nav-link" href="#products1">Products</a>
+                <a class="nav-item nav-link" href="#contacts">Contact Us</a>
               </div>
             </div>
           </nav>
@@ -234,15 +217,12 @@
       </section>
       <!-- Our Projects-->
       <section class="section section-lg bg-light-100 text-center">
-        <div class="container">
+        <div class="container-wide">
           
-        </div>
-        <div class="container-fluid">
-          
-            <div class='card' style="background-color: #F7F7F0; padding-left: 50px; padding-right: 50px; ">
-            <div class="card-body" style="padding-right: 50px; padding-left: 50px;">
+        <div class='card' style="background-color: #F7F7F0; ">
+            <div class="card-body">
               <div class="row">
-                <div class="col-md-6 m-auto text-light">
+                <div class="col-md-12 m-auto text-light">
                   <h2>About Tea</h2>
     
                 </div>
@@ -250,17 +230,15 @@
               </div>
 
           <div class='row no-gutters'>
-            <div class='col-md-4' style='text-align: left; width: 50%;'>
-              <article>
-                There's a body-soul connection that certain ingredients of nature <br> are capable of navigating. 
-                A number of them are well-known.<br> Similarly, herbal Teas - they traverse the routes from the body to the soul. 
-                They are the scenty, minty, and flavored herbal goodness of nature.<br> All working in synergy -- 
-                awakening brain cells, revitalizing body tissues,<br> channeling the soul - 
-                freeing it of emotional debris.<br> Making you bodily fortified, mentally alert<br> and emotionally sound all through the day.
-              </article>
+            <div class='col-md-4 col-sm-12'>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe officiis, 
+                magni perspiciatis impedit corrupti assumenda tempore similique accusantium officia, 
+                facilis molestiae. Vero suscipit nostrum dignissimos debitis laboriosam sint dicta nemo.
+              </p>
           </div>
-          <div class='col-md-8'>
-            <img src="tea/black-tea.jfif" class='img-fluid' style="width: 200px; height: 200px;">
+          <div class='col-md-8 col-sm-12'>
+            <img src="tea/black-tea.jfif" class='img-fluid'>
         </div>
       </div>
 
@@ -313,48 +291,10 @@
       </div> 
         
   </div>
-            </div>
 
-        </div>
-
-            
-        </div>
-    </section>
-  
-      <!--<section class="parallax-container section" data-parallax-img="images/bg-image-2-1920x754.jpg"><div class="material-parallax parallax"><img src="images/bg-image-2-1920x754.jpg" alt="" style="display: block;"></div>
-        <div class="parallax-content section-xl parallax-dark context-dark dark-layout">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-9">
-                <h2>Importer and <br>purveyor of fine tea since 1843 </h2>
-                <h4 class="text-uppercase font-weight-medium">We are ready to please tea beginners and tea gurus</h4><a class="button button-primary-light" href="#">Read more</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>-->
-      <!-- Download Brochure-->
-      <!--<section class="section bg-default section-lg">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-5">
-              <div class="download-block-classic-image"><img src="images/download-01-523x645.jpg" alt="" width="523" height="645">
-              </div>
-            </div>
-            <div class="col-lg-7">
-              <div class="download-block-classic">
-                <h2>Tea Sales Center</h2>
-                <div class="divider divider-secondary"></div>
-                <p class="download-block-classic-text">At our Tea Sales Center, you not only get to select among the best and widest range of various tea brands but also get to see the diversity and variety in all popular tea categories.</p><a class="button button-secondary-light" href="#">read more</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> -->
-      <!-- Company News-->
-      <section class="section bg-gray-100 section-lg text-center">
-        <div class="container container-wide">
-          <h2 id="products1">Products</h2>
+    <div class="row">
+      <div class="col-md-12">
+        <h2 id="products1">Products</h2>
           <div class="row row-30">
             <div class="col-lg-6 col-xl-4">
                     <article class="news-full-width">
@@ -466,8 +406,51 @@
                     </article>
             </div>
           </div>
+      </div>
+    </div>
+
+
+
+            </div>
+
         </div>
-      </section>
+
+            
+        </div>
+    </section>
+  
+      <!--<section class="parallax-container section" data-parallax-img="images/bg-image-2-1920x754.jpg"><div class="material-parallax parallax"><img src="images/bg-image-2-1920x754.jpg" alt="" style="display: block;"></div>
+        <div class="parallax-content section-xl parallax-dark context-dark dark-layout">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-9">
+                <h2>Importer and <br>purveyor of fine tea since 1843 </h2>
+                <h4 class="text-uppercase font-weight-medium">We are ready to please tea beginners and tea gurus</h4><a class="button button-primary-light" href="#">Read more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>-->
+      <!-- Download Brochure-->
+      <!--<section class="section bg-default section-lg">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-5">
+              <div class="download-block-classic-image"><img src="images/download-01-523x645.jpg" alt="" width="523" height="645">
+              </div>
+            </div>
+            <div class="col-lg-7">
+              <div class="download-block-classic">
+                <h2>Tea Sales Center</h2>
+                <div class="divider divider-secondary"></div>
+                <p class="download-block-classic-text">At our Tea Sales Center, you not only get to select among the best and widest range of various tea brands but also get to see the diversity and variety in all popular tea categories.</p><a class="button button-secondary-light" href="#">read more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> -->
+      <!-- Company News-->
+
       <!-- Footer Full Width-->
       <section class="section section-sm bg-default pre-footer-full-width">
         <div class="container">
@@ -529,65 +512,122 @@
       </footer>
     </div>
     <div class="snackbars" id="form-output-global"></div>
-    	<script src="thirdparties/js/jquery.min.js"></script>
+    
+
+
+    <!-- Modals-->
+    <div class="modal fade mt-5" id="orderTeaModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Place an order for tea</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form method='POST' id='tea_form'>
+              <div class="form-group">
+                <label for="recipient-name" class="col-form-label">Full name</label>
+                <input type="text" class="form-control" name='fullname' id="recipient-name">
+              </div>
+              <div class="form-group">
+                <div class="row">
+                  <div class="col-md-6">
+                    <label for="message-text" class="col-form-label">Phone:</label>
+                   <input type="text" class="form-control" name='phone' id="recipient-phone">
+                  </div>
+
+                   <div class="col-md-6">
+                    <label for="message-text" class="col-form-label">Email:</label>
+                   <input type="text" class="form-control" name='email' id="recipient-email">
+                  </div>
+                </div>
+              </div>
+
+
+               <div class="form-group">
+                <label for="message-text" class="col-form-label">Residential Address:</label>
+                 <textarea class='form-control' name='address' id='recipient-address'></textarea>
+              </div>
+
+               <div class="form-group">
+                <label for="message-text" class="col-form-label">Quantity</label>
+                 <input type="number" class="form-control" name='quantity' min="1" step="1" id='quantity'>
+              </div>
+              <input type='hidden' name='tea_type' value="tea">
+
+              <div class="form-group mt-2">
+
+            <button type="submit" class="btn btn-primary">Place Order</button>
+          </div>
+            </form>
+          </div>
+         
+        </div>
+      </div>
+    </div>
+
+    <!-- End of Modals-->
+	 <script src="thirdparties/js/jquery.min.js"></script>
       <script src="thirdparties//js/easing.js"></script>
      <script type="text/javascript" src="thirdparties/js/jquery.ui.totop.min.js"></script>
      <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
          <script src="thirdparties/js/core.min.js"></script>
 
     <script src="thirdparties/js/script.js"></script>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
 
     <!-- Process Modals -->
     <script>
-      $('#orderTeaModal').on('show.bs.modal', function (event) {
-        var button = $(event.relatedTarget) // Button that triggered the modal
-        var recipient = button.data('ordertea') // Extract info from data-* attributes
+
+
+      const navItems = document.querySelectorAll(".nav-item");
+
+      navItems.forEach((nav_item) =>{
+
+
+        nav_item.addEventListener("click", function(e){
+            clicked_element = e.target;
+            //add active class to this element
+            clicked_element.classList.add("active");
+
+            navItems.forEach((item) =>{
+                if(item != this){
+                  item.classList.remove('active');
+                }
+
+            })
+
+        })
+
+      });
+
+
+           //Modals 
+      $("#tea_form").submit(function(e){
+        e.preventDefault();
+          //run ajax
+          $.post({
+              url: "loaders/order_tea.php",
+              data: $(this).serialize(),
+              success: function(result){
+                toastr.info(result);
+              }
+
+          })
+
+
+
+      });
+
+    
+      //End of Modals
+
+
+ 
+
      
-        var modal = $(this);
-
-        console.log("This modal: ", modal);
-        modal.find('.modal-title').text('New message to ' + recipient)
-        modal.find('.modal-body input').val(recipient)
-      })
     </script>
-
-
-    <!-- End of Process Modals -->
-      
-
-
-    <!-- Modals-->
-    <div class="modal fade" id="orderTeaModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">New message</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <form>
-              <div class="form-group">
-                <label for="recipient-name" class="col-form-label">Recipient:</label>
-                <input type="text" class="form-control" id="recipient-name">
-              </div>
-              <div class="form-group">
-                <label for="message-text" class="col-form-label">Message:</label>
-                <textarea class="form-control" id="message-text"></textarea>
-              </div>
-            </form>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Send message</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- End of Modals-->
-	
 </body>
 </html>
